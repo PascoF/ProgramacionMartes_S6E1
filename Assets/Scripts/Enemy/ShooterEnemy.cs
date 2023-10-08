@@ -15,7 +15,7 @@ public class ShooterEnemy : MonoBehaviour, IObserver
     {
         GameManager.Instance.Attach(this);
 
-        float rand = Random.ProjectilRange(1.0f, 2.0f);
+        float rand = Random.Range(1.0f, 2.0f);
         InvokeRepeating("Shoot", 2, rand);
     }
 
