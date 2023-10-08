@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerProjectil : MonoBehaviour
+public class PlayerProjectil : MonoBehaviour, IObserver
 {
     [SerializeField]
     public float SpeedProjectil;
