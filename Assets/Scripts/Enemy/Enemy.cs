@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour, IObserver
 {
     [SerializeField]
-    public UnityEngine.AI.NavMeshAgent Enemy;
+    public UnityEngine.AI.NavMeshAgent enemy;
     private float speed;
     private Rigidbody rb;
     public Transform player;
@@ -31,6 +31,6 @@ public class Enemy : MonoBehaviour, IObserver
     void Update()
     {
         rb.velocity = new Vector3(0, rb.velocity.y, speed / 10);
-        Enemy.SetDestination(player.position);
+        enemy.SetDestination(player.position);
     }
 }
