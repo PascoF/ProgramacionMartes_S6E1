@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShooterEnemy : MonoBehaviour
+public class ShooterEnemy : MonoBehaviour, IObserver
 {
     [SerializeField]
     private float ImpuseProjectil;
