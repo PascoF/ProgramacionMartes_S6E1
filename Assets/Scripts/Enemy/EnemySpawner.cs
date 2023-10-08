@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        if (CanSpawn && !isSpawning)
+        if (CanSpawn && !Spawning)
         {
             foreach (Transform spawnPoint in SpawnPoints)
             {
